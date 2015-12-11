@@ -19,7 +19,7 @@ ENV PHP_SHA256 d6ae7b4a2e5c43a9945a97e83b6b3adfb7d0df0b91ef78b647a6dffefaa9c71b
 RUN mkdir -p $PHP_INI_DIR/conf.d
 
 RUN apk --update add \
-    curl
+    curl \
     git \
     autoconf \
     make \
