@@ -19,7 +19,7 @@ ENV PHP_SHA256 d6ae7b4a2e5c43a9945a97e83b6b3adfb7d0df0b91ef78b647a6dffefaa9c71b
 RUN mkdir -p $PHP_INI_DIR/conf.d
 
 RUN apk --update add \
-    curl \
+    curl
     git \
     autoconf \
     make \
@@ -33,11 +33,11 @@ RUN apk --update add \
     openssl-dev \
     libxml2-dev
 
-RUN curl -SL "http://php.net/get/php-$PHP_VERSION.tar.gz/from/this/mirror" -o php.tar.gz \
+RUN curl -sSL "http://php.net/get/php-$PHP_VERSION.tar.gz/from/this/mirror" -o php.tar.gz \
     && [[ $PHP_SHA256 == "$(sha256sum php.tar.gz | awk '{print $1}')" ]] \
     && mkdir -p /usr/src \
     && tar -zxf php.tar.gz -C /usr/src \
-    && rm -f php.tar.*
+    && rm -f php.tar.* \
     && cd /usr/src/php-$PHP_VERSION \
     && ./configure \
         --with-config-file-path="$PHP_INI_DIR" \
