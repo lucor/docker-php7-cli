@@ -3,7 +3,7 @@
 A lightweight Docker image for [PHP7](https://php.net/)
 
 It provides:
-  - PHP 7.0.0
+  - PHP 7.0.2
 
 ## Usage
 
