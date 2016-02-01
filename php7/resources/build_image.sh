@@ -5,6 +5,7 @@ BASE_DIR=$(cd "$(dirname "$0")" && pwd)
 mkdir -p $PHP_INI_DIR/conf.d
 
 apk --update add \
+    bash \
     bison \
     curl \
     file \
