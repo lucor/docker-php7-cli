@@ -5,25 +5,6 @@ BASE_DIR=$(cd "$(dirname "$0")" && pwd)
 mkdir -p $PHP_INI_DIR/conf.d
 
 apk --update add \
-    bash \
-    bison \
-    curl \
-    file \
-    git \
-    gmp \
-    grep \
-    icu \
-    libmcrypt \
-    libxml2 \
-    libbz2 \
-    libintl \
-    openssl \
-    re2c \
-    readline \
-    sqlite \
-    tar
-
-apk --update add \
     autoconf \
     build-base \
     bzip2-dev \
