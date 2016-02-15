@@ -1,32 +1,32 @@
-FROM alpine:3.3
+FROM alpine:edge
 
 MAINTAINER Luca Corbo <lu.corbo@gmail.com>
 
-ENV PHP_VERSION 7.0.3
-ENV PHP_INI_DIR /usr/local/etc/php
-ENV PHP_SHA256 5521df8db153aba35c90cf1a1829106b6bbdac32425216d440f9cc29f00a7c08
+RUN apk --update --repository http://dl-4.alpinelinux.org/alpine/edge/testing  add \
+		bash \
+		git \
+		curl \
+		unzip \
+	    php7 \
+	    php7-xml \
+	    php7-zip \
+	    php7-xmlreader \
+	    php7-zlib \
+	    php7-opcache \
+	    php7-mcrypt \
+	    php7-openssl \
+	    php7-curl \
+	    php7-json \
+	    php7-dom \
+	    php7-phar \
+	    php7-mbstring
 
-RUN apk --update add \
-	    bash \
-	    bison \
-	    curl \
-	    file \
-	    git \
-	    gmp \
-	    grep \
-	    icu \
-	    libmcrypt \
-	    libxml2 \
-	    libbz2 \
-	    libintl \
-	    openssl \
-	    re2c \
-	    readline \
-	    sqlite \
-	    tar
+RUN ln -s /usr/bin/php7 /usr/bin/php
 
-COPY resources /build/
-RUN /build/build_image.sh && rm -Rf /build
+COPY resources/php.ini /etc/php7/php.ini
+
+RUN rm -rf /var/cache/apk/* \
+  && rm -rf /tmp/php*
 
 WORKDIR /app
 
