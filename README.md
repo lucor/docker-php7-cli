@@ -2,12 +2,12 @@
 
 [![](https://badge.imagelayers.io/lucor/php7-cli:latest.svg)](https://imagelayers.io/?images=lucor/php7-cli:latest 'Get your own badge on imagelayers.io')
 
-A lightweight Docker image for [PHP7](https://php.net/) based on Alpine linux 
+A lightweight Docker image for [PHP7](https://php.net/) based on Alpine linux
 
 It provides:
 
 - alpine `edge@testing`
-- PHP `v7.0.5`
+- PHP `v7.0.6`
 
 with the following extensions:
 
