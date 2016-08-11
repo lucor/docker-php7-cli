@@ -1,6 +1,6 @@
 # Lightweight Docker Image for PHP7 CLI
 
-[![](https://badge.imagelayers.io/lucor/php7-cli:latest.svg)](https://imagelayers.io/?images=lucor/php7-cli:latest 'Get your own badge on imagelayers.io')
+[![](https://images.microbadger.com/badges/image/lucor/php7-cli.svg)](http://microbadger.com/images/lucor/php7-cli "Get your own image badge on microbadger.com")
 
 A lightweight Docker image for [PHP7](https://php.net/) based on Alpine linux
 
