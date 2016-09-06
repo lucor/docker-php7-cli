@@ -39,4 +39,4 @@ with the following extensions:
 
 ## Usage
 
-  docker run -ti --rm -v $(pwd):/app lucor/php php -v
+    docker run -ti --rm -v $(pwd):/app lucor/php7-cli php -v
