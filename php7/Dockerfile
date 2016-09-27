@@ -6,7 +6,7 @@ WORKDIR /app
 
 CMD ["php", "-a"]
 
-RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testing  add \
+RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/community  add \
         bash \
         ca-certificates \
         git \
@@ -29,4 +29,3 @@ RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/testin
 RUN ln -s /usr/bin/php7 /usr/bin/php
 
 COPY resources/php.ini /etc/php7/php.ini
-
