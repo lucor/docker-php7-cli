@@ -24,7 +24,9 @@ RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/commun
         php7-json \
         php7-dom \
         php7-phar \
-        php7-mbstring
+        php7-mbstring \
+        php7-pdo \
+        php7-pdo_sqlite
 
 RUN ln -s /usr/bin/php7 /usr/bin/php
 

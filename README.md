@@ -24,6 +24,8 @@ with the following extensions:
 - mcrypt
 - openssl
 - pcre
+- PDO
+- pdo_sqlite
 - Phar
 - Reflection
 - SimpleXML
