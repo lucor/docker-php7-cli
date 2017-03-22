@@ -7,7 +7,7 @@ A lightweight Docker image for [PHP7](https://php.net/) based on Alpine linux
 It provides:
 
 - alpine `edge@community`
-- PHP `v7.0.16`
+- PHP `v7.0.17`
 
 with the following extensions:
 
