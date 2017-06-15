@@ -27,6 +27,7 @@ RUN apk --no-cache --repository http://dl-cdn.alpinelinux.org/alpine/edge/commun
         php7-mbstring \
         php7-pdo \
         php7-pdo_sqlite \
-        php7-tokenizer
+        php7-tokenizer \
+        php7-xmlwriter
 
 COPY resources/php.ini /etc/php7/php.ini
